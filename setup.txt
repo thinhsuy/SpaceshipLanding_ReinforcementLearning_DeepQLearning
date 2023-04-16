@@ -2,7 +2,6 @@ utils
 pyvirtualdisplay
 swig
 box2d-py
-box2d-py
 pygame
 tensorflow
 numpy
