@@ -99,6 +99,12 @@ $$
 # Update Network Weights
 The `agent_learn` function will update the weights of the $Q$ and target $\hat Q$ networks using a custom training loop. Because we are using a custom training loop we need to retrieve the gradients via a `tf.GradientTape` instance, and then call `optimizer.apply_gradients()` to update the weights of our $Q$-Network. Note that we are also using the `@tf.function` decorator to increase performance. Without this decorator our training will take twice as long. If you would like to know more about how to increase performance with `@tf.function` take a look at the [TensorFlow documentation](https://www.tensorflow.org/guide/function).
 
+# Outcome
+
+![Web capture_16-4-2023_14847_github com](https://user-images.githubusercontent.com/81562297/232279286-40e70a80-f72b-412e-b9de-9e8cff043e4f.jpeg)
+
+It is simple to observe that the agent has accrued greater points for having been trained through additional episodes. This indicates that the solution to the problem is being achieved in a realistic manner employing the architecture specified above.
+
 # References
 If you would like to learn more about Deep Q-Learning, we recommend you check out the following papers.
 * Mnih, V., Kavukcuoglu, K., Silver, D. et al. Human-level control through deep reinforcement learning. Nature 518, 529–533 (2015).
